@@ -1,0 +1,109 @@
+
+
+
+GOLEM.WAD
+
+main.iso offset = 23790F0 (last block)
+
+00 00 C8 43 = 43C80000 = 400 HP
+00 00 7A 43 = 437A0000 = 250 EXP
+
+17913 = 468BF200 => 00 F2 8B 46
+
+
+Okkk, here's the RAM code reading the GOLEMs HP
+8003e8b0 lfs	f1, 0x00E4 (r31)	-> Load values at 81218054 which are the GOLEM.WAD HP
+8003e8b4 lfs	f0, 0x00AC (r3)		-> Load 0.75 is this Normal difficulty?
+8003e8b8 fmuls	f0, f1, f0			-> multiply f1(HP) by f0(0.75)
+8003e8bC stfs	f0, 0x04B0 (r30)	-> Save new HP at 80241b64 OR 80241084 depending on RAM it seems
+
+80241b64 = 4651EB00 -> 13434.75 HP
+
+
+
+Now do same for Gargoyle Eagle
+main.iso 2359034 HP
+
+original
+00 00 16 44 = 44160000 => 600 HP
+00 00 FA 43 = 43FA0000 => 500 EXP
+
+15555 = 46730C00 => 00 0C 73 46
+
+8121a3e4 = RAM Gargoyle HP
+
+saving HP at 80242644 to Fight
+
+
+
+ok test Read Breakpoint on Barrack A2  WDATA CASTLE.WAD
+main.iso 4EA209E0 = 00 00 80 3F
+
+ok this is loaded at 80A28FA0
+
+rat damage ??? 403fced9 => 2.997
+3f1dbb66
+40000000
+
+
+80358ea4 Barrack type 2 Damage -> 40f01eb8 => 7.50375
+
+80358ea4 Barrack type 1 Damage -> 406fc28f => 3.74625
+
+
+main.iso offset 00135C48 = 3D CC CC CD = 0.1   is that No this affect Enemy Speed
+what if 10? 41200000
+
+
+
+RAM
+8004fe58 lfs	f31, 0x0AC8 (r3)
+8004fe5c beq-	 ->0x8004FE6C
+8004fe60 lwz	r3, -0x72BC (r13)
+8004fe64 lfs	f0, 0x00AC (r3)    -> Loads HP Multiplier
+
+
+
+RAM bunch of number, are those HP??? YES 
+8011b480  Barrack Load Stuff there for HP or Dmg
+
+
+
+3F 80 00 00 = 1		=>
+00 00 00 00 = 0		=>
+00 00 00 00 = 0		=>
+00 00 00 00 = 0		=>
+41 A8 00 00 = 21	=> SCORP (Dragon world)
+41 F0 00 00 = 30	=> TROLL (Dragon world) (all trolls Archers + Bombers)
+42 38 00 00 = 46	=> DEMON (Dragon world)
+41 A8 00 00 = 21	=> RATs
+41 F0 00 00 = 30	=> GRUNT (all grunts Archers + Bombers)
+42 38 00 00 = 46	=> KNIGHT
+41 A8 00 00 = 21
+41 F0 00 00 = 30
+42 38 00 00 = 46
+41 A8 00 00 = 21
+41 F0 00 00 = 30
+42 38 00 00 = 46
+41 A8 00 00 = 21
+41 F0 00 00 = 30
+41 F0 00 00 = 30
+41 A8 00 00 = 21
+41 F0 00 00 = 30
+42 38 00 00 = 46
+41 A8 00 00 = 21
+41 F0 00 00 = 30
+42 38 00 00 = 46
+41 A8 00 00 = 21
+41 A8 00 00 = 21
+41 F0 00 00 = 30
+42 38 00 00 = 46
+42 38 00 00 = 46
+42 38 00 00 = 46
+42 C8 00 00 = 100
+00 00 00 00 = 00
+43 48 00 00 = 200
+42 C8 00 00 = 100	=> Red & Black Death total Drain amount (HP or EXP)
+46 1C 3C 00 = 9999
+
+

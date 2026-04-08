@@ -1,0 +1,249 @@
+start.dol = 001180B8 Start of 9 Block of 0x88 each long
+main.iso  = 00135A18 Start of 9 Block of 0x88 each long
+
+
+1 - ??
+2 - Seems to affect Spawn?
+3 - Enemy Attack Range?
+4 - Seems to affect Spawn?
+5 - Speed
+6 - Damage
+7 - The Empty one - all 00's
+8 - HP
+9 - ??
+
+
+
+
+
+************************************
+	**Block 01 = ??? Enemies**
+************************************
+
+40 40 00 00
+40 C0 00 00
+40 C0 00 00
+40 40 00 00
+40 C0 00 00
+40 C0 00 00
+40 40 00 00
+40 C0 00 00
+40 C0 00 00
+40 40 00 00
+40 C0 00 00
+40 C0 00 00
+40 40 00 00
+40 C0 00 00
+40 C0 00 00
+40 40 00 00
+40 C0 00 00
+40 C0 00 00
+40 40 00 00 
+40 C0 00 00 
+40 C0 00 00 
+40 40 00 00 
+40 40 00 00 
+40 C0 00 00 
+40 C0 00 00 
+40 C0 00 00 
+40 C0 00 00 
+41 20 00 00 
+BF 80 00 00 
+41 40 00 00 
+40 C0 00 00 
+40 A0 00 00 
+41 20 00 00 
+40 C0 00 00
+
+
+************************************
+	**Block 05 = Speed Enemies**
+************************************
+3D CC CC CD = 0.1    => SCORP   (Dragon World)
+3D CC CC CD = 0.1    => TROLL   (Dragon World) (all trolls Archers + Bombers)
+3D F5 C2 8F = 0.12   => DEMON   (Dragon World)
+3D CC CC CD = 0.1    => RATs    (Castle World)
+3D CC CC CD = 0.1    => GRUNT   (Castle World) (all grunts Archers + Bombers)
+3D CC CC CD = 0.1    => KNIGHT  (Castle World)
+3D CC CC CD = 0.1    => SNAKE   (Desert World)
+3D CC CC CD = 0.1    => SORC	 (Desert World) (all sorcerers Archers + Bombers)
+3D CC CC CD = 0.1    => MUMMY   (Desert World)
+3D CC CC CD = 0.1    => SPIDERS (Spider World)
+3D CC CC CD = 0.1    => LIZARDS (Spider World) (all lizards Archers + Bombers)
+3D CC CC CD = 0.1    => TRENT   (Spider World) ->Tree Monsters 
+3D CC CC CD = 0.1    => MAGGOTS (Lich World)
+3D CC CC CD = 0.1    => ZOMBIES (Lich World)
+3D CC CC CD = 0.1    => ???
+3D CC CC CD = 0.1    => WOLF	 (Ice World)
+3D CC CC CD = 0.1    => MINERS  (Ice World)
+3D CC CC CD = 0.1    => WORMS   (Ice World)
+3D CC CC CD = 0.1    => HGRN	 (Battle World)  (Skeleton Hound Dogs)
+3D CC CC CD = 0.1    => HGRUN   (Battle World)  (Skeleton H? Grunts)
+3D CC CC CD = 0.1    => SKELETON(Lich World)    (Ghost Skeleton)
+3C A3 D7 0A = 0.02   => BLOB    (Sky World)
+3D 4C CC CD = 0.05   => JGRN	 (Dream World) -> little Hands
+3D CC CC CD = 0.1    => JDEM    (Dream World) -> Flying Demons
+3D CC CC CD = 0.1    => JGRUN ? (Hell World + Dream World)  -> Purple Stabbers/Wizards
+3D CC CC CD = 0.1    => FDEMON  (Hell World + Sky World)    -> ~Flying Demon -> 2 arm Green flying cyclop monster
+3D CC CC CD = 0.1    => ???
+3D CC CC CD = 0.1    => ???
+BF 80 00 00 = -1     => ???
+3D B8 51 EC = 0.09   => ???
+3E 00 00 00 = 0.125  => Red & Black Death total Drain amount (HP or EXP)  RAM ADDRESS = 8011b4e8
+3D CC CC CD = 0.1    => ???
+3D CC CC CD = 0.1    => ???
+3D B8 51 EC = 0.09   => ??
+
+*************************************
+	**Block 06 = Damage Enemies**
+*************************************
+41 40 00 00 = 12           => SCORP   (Dragon World)
+41 70 00 00 = 15           => TROLL   (Dragon World) (all trolls Archers + Bombers)
+41 90 00 00 = 18           => DEMON   (Dragon World)
+41 40 00 00 = 12           => RATs    (Castle World)
+41 70 00 00 = 15           => GRUNT   (Castle World) (all grunts Archers + Bombers)
+41 90 00 00 = 18           => KNIGHT  (Castle World)
+41 40 00 00 = 12           => SNAKE   (Desert World)
+41 70 00 00 = 15           => SORC	 (Desert World) (all sorcerers Archers + Bombers)
+41 90 00 00 = 18           => MUMMY   (Desert World)
+41 40 00 00 = 12           => SPIDERS (Spider World)
+41 70 00 00 = 15           => LIZARDS (Spider World) (all lizards Archers + Bombers)
+41 90 00 00 = 18           => TRENT   (Spider World) ->Tree Monsters 
+41 40 00 00 = 12           => MAGGOTS (Lich World)
+41 70 00 00 = 15           => ZOMBIES (Lich World)
+41 70 00 00 = 15           => ???
+41 40 00 00 = 12           => WOLF	 (Ice World)
+41 70 00 00 = 15           => MINERS  (Ice World)
+41 90 00 00 = 18           => WORMS   (Ice World)
+41 40 00 00 = 12           => HGRN	 (Battle World)  (Skeleton Hound Dogs)
+41 70 00 00 = 15           => HGRUN   (Battle World)  (Skeleton H? Grunts)
+41 90 00 00 = 18           => SKELETON(Lich World)    (Ghost Skeleton)
+41 40 00 00 = 12           => BLOB    (Sky World)
+41 40 00 00 = 12           => JGRN	 (Dream World) -> little Hands
+41 70 00 00 = 15           => JDEM    (Dream World) -> Flying Demons
+41 70 00 00 = 15           => JGRUN ? (Hell World + Dream World)  -> Purple Stabbers/Wizards
+41 70 00 00 = 15           => FDEMON  (Hell World + Sky World)    -> ~Flying Demon -> 2 arm Green flying cyclop monster
+41 70 00 00 = 15           => ???
+41 A0 00 00 = 20           => 
+00 00 00 00 = 00           => 
+41 A0 00 00 = 20           => 
+3F 80 00 00 = 1            => Red & Black Death total Drain amount (HP or EXP)  RAM ADDRESS = 8011b4e8
+00 00 00 00 = 00           =>
+41 F0 00 00 = 30           =>
+41 A0 00 00 = 20		   => ??
+
+
+**Block 07 = ???**
+All EMPTIES Values
+
+*********************************
+	**Block 08 = HP Enemies**
+	main.iso = 00135DD0
+*********************************
+41 A8 00 00 = 21	=> SCORP   (Dragon World)
+41 F0 00 00 = 30	=> TROLL   (Dragon World) (all trolls Archers + Bombers)
+42 38 00 00 = 46	=> DEMON   (Dragon World)
+41 A8 00 00 = 21	=> RATs    (Castle World)
+41 F0 00 00 = 30	=> GRUNT   (Castle World) (all grunts Archers + Bombers)
+42 38 00 00 = 46	=> KNIGHT  (Castle World)
+41 A8 00 00 = 21	=> SNAKE   (Desert World)
+41 F0 00 00 = 30	=> SORC	   (Desert World) (all sorcerers Archers + Bombers)
+42 38 00 00 = 46	=> MUMMY   (Desert World)
+41 A8 00 00 = 21	=> SPIDERS (Spider World)
+41 F0 00 00 = 30	=> LIZARDS (Spider World) (all lizards Archers + Bombers)
+42 38 00 00 = 46	=> TRENT   (Spider World) ->Tree Monsters 
+41 A8 00 00 = 21	=> MAGGOTS (Lich World)
+41 F0 00 00 = 30	=> ZOMBIES (Lich World)
+41 F0 00 00 = 30	=> ???
+41 A8 00 00 = 21	=> WOLF	   (Ice World)
+41 F0 00 00 = 30	=> MINERS  (Ice World)
+42 38 00 00 = 46	=> WORMS   (Ice World)
+41 A8 00 00 = 21	=> HGRN	   (Battle World)  (Skeleton Hound Dogs)
+41 F0 00 00 = 30	=> HGRUN   (Battle World)  (Skeleton H? Grunts)
+42 38 00 00 = 46	=> SKELETON(Lich World)    (Ghost Skeleton)
+41 A8 00 00 = 21	=> BLOB    (Sky World)
+41 A8 00 00 = 21	=> JGRN	   (Dream World) -> little Hands
+41 F0 00 00 = 30	=> JDEM    (Dream World) -> Flying Demons
+42 38 00 00 = 46	=> JGRUN ? (Hell World + Dream World)  -> Purple Stabbers/Wizards
+42 38 00 00 = 46	=> FDEMON  (Hell World + Sky World)    -> ~Flying Demon -> 2 arm Green flying cyclop monster
+42 38 00 00 = 46	=> ???
+42 C8 00 00 = 100	=> 
+00 00 00 00 = 00	=> 
+43 48 00 00 = 200	=> 
+42 C8 00 00 = 100	=> Red & Black Death total Drain amount (HP or EXP)  RAM ADDRESS = 8011b4e8
+46 1C 3C 00 = 9999	=>
+42 FA 00 00 = 500	=>
+43 48 00 00 = ???
+
+
+
+
+
+**Block 09 = ???**
+40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 40 40 00 00 00 00 00 00 40 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 40 00 00
+
+
+
+
+
+main.iso  = 00135C38 there are a bunch of "3D CC CC CD 3D CC CC CD" those are 0.1 and I think they are the Enemy Speed
+
+Total amount of values are 205 + 62 = 267 total values roughly 7 blocks?
+ok its block 0x88 long, starting at main.iso 00135A18 -> values = 40 40 00 00 40 C0 00 00 40 C0 00 00 40 40 00 00
+9 Block total 
+
+
+Block #9 Test = No clue either, don't see difference with 5000
+
+40 40 00 00 40 40 00 00 40 40 00 00
+
+40 40 00 00 = 2		=> SCORP (Dragon world) ?
+40 40 00 00 = 2		=> TROLL (Dragon world) ?
+40 40 00 00 = 2		=> DEMON (Dragon world) ?
+
+
+Block #6 Test = ok it's Damage
+
+41 40 00 00 41 70 00 00 41 90 00 00 41 40 00 00
+
+if 459c4000 (5000)
+
+41 40 00 00 = 12	=> SCORP (Dragon world) ?
+41 70 00 00 = 15	=> TROLL (Dragon world) ?
+41 90 00 00 = 18	=> DEMON (Dragon world) ?
+
+
+Block #4 Test - Unsure -> Affect Spawns it seems
+
+3F C0 00 00 40 40 00 00 40 40 00 00
+
+3F C0 00 00 = 1.5   => SCORP (Dragon world) ? hmm when set at 5000 or 15 they stop spawning
+40 40 00 00 = 3   	=> TROLL (Dragon world) ?
+40 40 00 00 = 3   	=> DEMON (Dragon world) ?
+
+
+Block #3 Test 
+
+40 00 00 00 40 73 33 33 40 73 33 33
+
+40 00 00 00 = 2		=> SCORP (Dragon world) if 50 = They can't hit you lol is this Range or something?
+40 73 33 33 = 3.8   => TROLL (Dragon world)
+40 73 33 33 = 3.8   => DEMON (Dragon world)
+
+
+Block #2 Test 
+
+3F C0 00 00 3F C0 00 00 3F E6 66 66
+
+3F C0 00 00 = 1.5  at 5000 stop spawning
+3F C0 00 00 = 1.5
+3F E6 66 66 = 1.8
+
+
+Block #1 Test  - ???
+
+40 40 00 00 40 C0 00 00 40 C0 00 00
+
+40 40 00 00 = 3 When 5000 dont see any difference
+40 C0 00 00 = 6
+40 C0 00 00 = 6

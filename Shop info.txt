@@ -1,0 +1,146 @@
+offset starts at 5605AC
+
+**************
+   SHOP.WAD
+**************
+
+First Line : 
+B0 0A 00 00 01 00 00 00 EE EE 00 00 EE EE 00 00
+End Pointer = B0 0A => 0AB0 
+
+at offset 0AB0
+End Pointer :
+4D 45 54 49 10 00 00 00 22 00 00 00 22 00 00 00
+
+10 00 = 0010 First Pointer
+22 Hex => 34x Item total
+
+---------------
+ 34 Item total
+---------------
+#00 - EXIT
+price = 00 00
+
+#01 - CHERRY
+price = 00 32 => 50gold
+
+#02 - KEY
+price = 00 64 => 100gold
+
+#03 - LEVITATE
+price = 00 96 => 150gold
+
+#04 - drumstik
+price = 00 FA => 250gold
+
+#05 - POTION
+price = 00 FA => 250gold
+
+#06 - GROWTH
+price = 2C 01 => 300gold
+
+#07 - FIRE_AMULET
+price = 5E 01 => 350gold
+
+#08 - ELECT_AMULET
+price = 5E 01 => 350gold
+
+#09 - LIGHT_AMULET
+price = 5E 01 => 350gold
+
+#10 - ACID_AMULET
+price = 5E 01 => 350gold
+
+#11 - CHAR_FIRE
+price = 5E 01 => 350gold
+
+#12 - CHAR_ARC
+price = 5E 01 => 350gold
+
+#13 - CHAR_ACID
+price = 5E 01 => 350gold
+
+#14 - SUPER_SHOT
+price = 90 01 => 400gold
+
+#15 - REFLECTiv_SHieLD
+price = 90 01 => 400gold
+
+#16 - litnshield
+price = A9 01 => 425gold
+
+#17 - FIRE_SHIELD
+price = A9 01 => 425gold
+
+#18 - PHEONIX
+price = C2 01 => 450gold
+
+#19 - RAPID_fire
+price = C2 01 => 450gold
+
+#20 - HAMMER
+price = F4 01 => 500gold
+
+#21 - 3WAY_SHOT
+price = 26 02 => 550gold
+
+#22 - INVISIBILTY
+price = 58 02 => 600gold
+
+#23 - INVULN
+price = 58 02 => 600gold
+
+#24 - XRAY_GLASSES
+price = 8A 02 => 650gold
+
+#25 - GASMASK
+price = 8A 02 => 650gold
+
+#26 - HALO
+price = EE 02 => 750gold
+
+#27 - Handofdeath
+price = E8 03 => 1000g
+
+#29 - Healthvampir
+price = E8 03 => 1000g
+
+#30 - Mikey
+price = E8 03 => 1000g
+
+#31 - STRENGTH
+price = E8 03 => 1000g
+
+#32 - SPEED
+price = E8 03 => 1000g
+
+#33 - ARMOR
+price = E8 03 => 1000g
+
+#34 - MAGIC
+price = E8 03 => 1000g
+
+
+Last Item : MAGIC
+
+73 68 70 5F 6D 61 67 69 63 00 00 20 20 74 79 70
+65 20 4D 41 47 49 43 0A 20 20 64 65 73 63 20 22
+41 64 64 20 31 30 20 74 6F 0A 4D 61 67 69 63 00
+00 20 20 70 72 69 63 65 20 3D 20 31 30 30 30 EA
+00 00 80 3F 08 00 00 00 E8 03 00 00 01 00 00 00
+
+in 3rd line :
+41 64 64 20 31 30 20 74 6F 0A 4D 61 67 69 63 = *Add 10 to Magic*  display in menu
+
+in last line : Stats Affected 
+3F 08 = MAGIC  if 3F 05 = STR, 3F 06 = SPEED, 3F 07 = ARMOR
+
+
+E8 03 = 03E8 => Actual Price = 1000g
+
+
+
+
++10 Stats for 1000g
+41200000 = 00 00 20 41 = 10
+not from 300000 to 10000000
